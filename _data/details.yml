@@ -1,0 +1,127 @@
+first_name: Dhaval
+last_name: Kapil
+occupation: Developer
+
+links:
+  - name: email
+    text: me@dhavalkapil.com
+    link: mailto:me@dhavalapil.com
+
+  - name: github
+    text: DhavalKapil
+    link: https://github.com/DhavalKapil
+  
+  - name: linkedin
+    text: dhavalkapil
+    link: https://in.linkedin.com/in/dhavalkapil
+
+  - name: twitter
+    text: dhaval_kapil
+    link: https://twitter.com/dhaval_kapil
+
+  - name: facebook
+    text: dhaval.kapil
+    link: https://www.facebook.com/dhaval.kapil
+
+summary: "Developer, Hacker, Programmer, Geek"
+
+education:
+
+  - school: "Indian Institute of Technology, IIT Roorkee"
+    degree: "B. Tech"
+    field: "Computer Science and Engineering"
+    from: "2013"
+    to: "present"
+
+employment:
+
+  - employer: "SDSLabs, IIT Roorkee"
+    position: "Developer"
+    description: >
+      An awesome group of students constantly striving to innovate and foster
+      technical activities at IIT Roorkee.
+    from: "January 2014"
+    to: "present"
+
+  - employer: "SDS PAG, IIT Roorkee"
+    position: "Programmer"
+    description: >
+      A group of enthusiastic and young programmers operating with the aim of
+      improving the algorithmic, mathematical and programatically problem
+      solving capability of students of IIT Roorkee.
+    from: "September 2013"
+    to: "present"
+
+skills:
+  
+  - category: "Web"
+    skill_set: "PHP, Javascript, Node.JS, Python, Ruby, JSP, HTML, CSS"
+
+  - category: "Developing"
+    skill_set: "Java, Lua, C, C++, MySQL, elasticsearch, mongodb, C#"
+
+  - category: "Misc"
+    skill_set: "linux, bash, git, vim"
+
+projects:
+
+  - name: "Backdoor"
+    url: https://backdoor.sdslabs.co/
+    description: >
+      Backdoor is a platform for hackers to show their talent in a competitive
+      environment. Earlier it was launched only within the IIT Roorkee campus,
+      but now it has been made available for anyone over the internet.
+      It is a Capture the Flag styled event. A flag (basically a string) is
+      associated with every challenge. Once you have solved a particular
+      challenge you would get the hidden flag which you need to submit
+      back to us for getting points.
+      **Awarded the best dynamic website in Srishti IITR 2015(Annual technical
+      exhibition of IIT Roorkee)**
+    details_url: https://blog.sdslabs.co/2014/10/launching-backdoor/
+
+  - name: "dns-validator"
+    url: https://www.npmjs.com/package/dns-validator
+    description: >
+      Security tool to detect dns poisoning attacks
+    source_url: https://github.com/DhavalKapil/dns-validator
+
+  - name: "Harley"
+    description: >
+      Daily activity center for autistic children developed for Microsoft
+      Code.Fun.Do
+    source_url: https://github.com/DhavalKapil/harley
+
+  - name: "network-monitor"
+    url: https://www.npmjs.com/package/network-monitor
+    description: >
+      Tool to analyze and monitor http traffic using TUI based responsive
+      display
+    source_url: https://github.com/DhavalKapil/network-monitor
+
+misc_projects:
+
+  - name: "JEE listing"
+    url: https://jee.sdslabs.co/
+    description: >
+      Was part of a team that released the first unofficial JEE listing in 2014
+
+  - name: "viewer"
+    description: >
+      A client/server java application to transmit changes on files on the client
+      side to the server side immediately.
+    source_url: https://github.com/DhavalKapil/viewer
+
+  - name: "MusicComposer"
+    description: >
+      A music generator that makes pleasing music based on western music theory.
+    source_url: https://github.com/DhavalKapil/MusicComposer
+
+interests: >
+  Computer Security, Network Security, Linux, Web Development, Software
+  development
+
+acheivements:
+  - "Runners up in Microsoft Code.Fun.Do hackathon"
+  - "Selected for onsite attack defense round in Microsoft Build The Shield"
+  - "All India Rank 114 in JEE MAINS 2013 (around 12,60,000 students participated)"
+  - "All India Rank 379 in JEE ADVACNED 2013 (top 1,28,000 students of JEE MAINS 2013 appeared)"
