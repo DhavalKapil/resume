@@ -2,140 +2,153 @@
 layout: default
 ---
 
-<div id = "about">
-      <span id = "first_name" class = "name">
-        {{ site.data.details.first_name }}
-      </span>
-      <span id = "last_name" class = "name">
-        {{ site.data.details.last_name }}
-      </span>
-      <span id = "occupation">
-        {{ site.data.details.occupation }}
-      </span>
-      <ul id = "links">
-        {% for link in site.data.details.links %}
-        <li id = "{{ link.name }}">
-          <a href = "{{ link.link }}">{{ link.text }}</a>
-        </li>
-        {% endfor %}
-      </ul>
+    <div id = "about-row" class="row">
+      <div id = "about" class="span4 offset8">
+        <div id = "about-details">
+          <span id = "name">
+            {{ site.data.details.first_name }} {{ site.data.details.last_name }}
+          </span>
+          <span id = "occupation">
+            {{ site.data.details.occupation }}
+          </span>
+        </div>
+      </div>
     </div>
 
-    <div id = "summary">
-      <p>Summary</p>
-      <p>{{ site.data.details.summary }}</p>
-    </div>
+    <div id = "main-content" class="row">
 
-    <div id = "details">
-      
-      <div id = "education">
-        <p>Education</p>
-        <ul>
-        {% for edu in site.data.details.education %}
-          <li>
-            <span class = "school">{{ edu.school }}</span>
-            <span class = "degree">{{ edu.degree }}</span>
-            <span class = "field">{{ edu.field }}</span>
-            <span class = "duration">
-              {{ edu.from }} - {{ edu.to }}
-            </span>
-          </li>
-        {% endfor %}
-        </ul>
+      <div id = "details" class="span8">
+        
+        <div id = "education">
+          <p>Education</p>
+          <ul>
+          {% for edu in site.data.details.education %}
+            <li>
+              <span class = "school">{{ edu.school }}</span>
+              <span class = "degree">{{ edu.degree }}</span>
+              <span class = "field">{{ edu.field }}</span>
+              <span class = "duration">
+                {{ edu.from }} - {{ edu.to }}
+              </span>
+            </li>
+          {% endfor %}
+          </ul>
+        </div>
+
+        <div id = "employment">
+          <p>Employment</p>
+          <ul>
+          {% for emp in site.data.details.employment %}
+            <li>
+              <span class = "employer">{{ edu.employer }}</span>
+              <span class = "position">{{ emp.position }}</span>
+              <span class = "description">{{ emp.description }}</span>
+              <span class = "duration">
+                {{ emp.from }} - {{ emp.to }}
+              </span>
+            </li>
+          {% endfor %}
+          </ul>
+        </div>
+
+        <div id = "projects">
+          <p>Projects</p>
+          <ul>
+          {% for project in site.data.details.projects %}
+            <li>
+            {% if project.url %}
+              <p><a href = "{{ project.url }}">{{ project.name }}</a></p>
+            {% else %}
+              <p>{{ project.name }}</p>
+            {% endif %}
+              <p class = "description">{{ project.description }}</p>
+            {% if project.details_url %}
+              <span class = "details_url">
+                <a href = "{{ project.details_url }}">details</a>
+              </span>
+            {% endif %}
+            {% if project.source_url %}
+              <span class = "source_url">
+                <a href = "{{ project.source_url }}">source</a>
+              </span>
+            {% endif %}
+            </li>
+          {% endfor %}
+          </ul>
+        </div>
+
+        <div id = "misc_projects">
+          <p>Miscellaneous Projects</p>
+          <ul>
+          {% for project in site.data.details.misc_projects %}
+            <li>
+            {% if project.url %}
+              <span><a href = "{{ project.url }}">{{ project.name }}</a></span>
+            {% else %}
+              <span>{{ project.name }}</span>
+            {% endif %}
+              <span class = "description">{{ project.description }}</span>
+            {% if project.details_url %}
+              <span class = "details_url">
+                <a href = "{{ project.details_url }}">details</a>
+              </span>
+            {% endif %}
+            {% if project.source_url %}
+              <span class = "source_url">
+                <a href = "{{ project.source_url }}">source</a>
+              </span>
+            {% endif %}
+            </li>
+          {% endfor %}
+          </ul>
+        </div>
+
+        <div id = "interests">
+          <p>Interests</p>
+          <p>{{ site.data.details.interests }}</p>
+        </div>
+
+        <div id = "acheivements">
+          <p>Acheivements</p>
+          <ul>
+          {% for acheivement in site.data.details.acheivements %}
+            <li>{{ acheivement }}</li>
+          {% endfor %}
+          </ul>
+        </div>
+
       </div>
 
-      <div id = "employment">
-        <p>Employment</p>
-        <ul>
-        {% for emp in site.data.details.employment %}
-          <li>
-            <span class = "employer">{{ edu.employer }}</span>
-            <span class = "position">{{ emp.position }}</span>
-            <span class = "description">{{ emp.description }}</span>
-            <span class = "duration">
-              {{ emp.from }} - {{ emp.to }}
-            </span>
-          </li>
-        {% endfor %}
-        </ul>
-      </div>
+      <div id = "sidebar" class="span4">
 
-      <div id = "skills">
-        <p>Skills</p>
-        <ul>
-        {% for skill in site.data.details.skills %}
-          <li>
-            <p>{{ skill.category }}</p>
-            <p>{{ skill.skill_set }}</p>
-          </li>
-        {% endfor %}
-        </ul>
-      </div>
+        <div id="profile-image">
+        </div>
+        
+        <div id = "links">
+          <ul>
+            {% for link in site.data.details.links %}
+            <li id = "{{ link.name }}">
+              <a href = "{{ link.link }}"><div class="circular" style="background: #33c4e8 url({{ link.icon }}) no-repeat center;"></div> {{ link.text }}</a>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
 
-      <div id = "projects">
-        <p>Projects</p>
-        <ul>
-        {% for project in site.data.details.projects %}
-          <li>
-          {% if project.url %}
-            <p><a href = "{{ project.url }}">{{ project.name }}</a></p>
-          {% else %}
-            <p>{{ project.name }}</p>
-          {% endif %}
-            <p class = "description">{{ project.description }}</p>
-          {% if project.details_url %}
-            <span class = "details_url">
-              <a href = "{{ project.details_url }}">details</a>
-            </span>
-          {% endif %}
-          {% if project.source_url %}
-            <span class = "source_url">
-              <a href = "{{ project.source_url }}">source</a>
-            </span>
-          {% endif %}
-          </li>
-        {% endfor %}
-        </ul>
-      </div>
+        <div id = "summary">
+          <p>Summary</p>
+          <p>{{ site.data.details.summary }}</p>
+        </div>
 
-      <div id = "misc_projects">
-        <p>Miscellaneous Projects</p>
-        <ul>
-        {% for project in site.data.details.misc_projects %}
-          <li>
-          {% if project.url %}
-            <span><a href = "{{ project.url }}">{{ project.name }}</a></span>
-          {% else %}
-            <span>{{ project.name }}</span>
-          {% endif %}
-            <span class = "description">{{ project.description }}</span>
-          {% if project.details_url %}
-            <span class = "details_url">
-              <a href = "{{ project.details_url }}">details</a>
-            </span>
-          {% endif %}
-          {% if project.source_url %}
-            <span class = "source_url">
-              <a href = "{{ project.source_url }}">source</a>
-            </span>
-          {% endif %}
-          </li>
-        {% endfor %}
-        </ul>
+        <div id = "skills">
+          <p>Skills</p>
+          <ul>
+          {% for skill in site.data.details.skills %}
+            <li>
+              <p>{{ skill.category }}</p>
+              <p>{{ skill.skill_set }}</p>
+            </li>
+          {% endfor %}
+          </ul>
+        </div>
       </div>
-
-      <div id = "interests">
-        <p>Interests</p>
-        <p>{{ site.data.details.interests }}</p>
-      </div>
-
-      <div id = "acheivements">
-        <p>Acheivements</p>
-        <ul>
-        {% for acheivement in site.data.details.acheivements %}
-          <li>{{ acheivement }}</li>
-        {% endfor %}
-        </ul>
-      </div>
-
     </div>
