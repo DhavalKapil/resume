@@ -18,98 +18,90 @@ layout: default
     <div id = "main-content" class="row">
 
       <div id = "details" class="span8">
-        
-        <div id = "education">
-          <p>Education</p>
+
+        <div id = "education" class="section">
+          <div class="title-box">
+            <div class="circular" style="background: #33c4e8 url(/assets/images/education-icon.png) no-repeat center;"></div>
+            Education
+          </div>
           <ul>
           {% for edu in site.data.details.education %}
             <li>
               <span class = "school">{{ edu.school }}</span>
-              <span class = "degree">{{ edu.degree }}</span>
-              <span class = "field">{{ edu.field }}</span>
               <span class = "duration">
                 {{ edu.from }} - {{ edu.to }}
-              </span>
+              </span><br />
+              <span class = "degree">{{ edu.degree }} - </span>
+              <span class = "field">{{ edu.field }}</span><br />              
             </li>
           {% endfor %}
           </ul>
         </div>
 
-        <div id = "employment">
-          <p>Employment</p>
+        <div id = "employment" class="section">
+          <div class="title-box">
+            <div class="circular" style="background: #33c4e8 url(/assets/images/employment-icon.png) no-repeat center;"></div>
+            Employment
+          </div>
           <ul>
           {% for emp in site.data.details.employment %}
             <li>
-              <span class = "employer">{{ edu.employer }}</span>
-              <span class = "position">{{ emp.position }}</span>
-              <span class = "description">{{ emp.description }}</span>
+              <span class = "employer">{{ emp.employer }}</span>
               <span class = "duration">
                 {{ emp.from }} - {{ emp.to }}
-              </span>
+              </span><br />
+              <span class = "position">{{ emp.position }}</span><br />
+              <span class = "description"> - {{ emp.description }}</span>
             </li>
           {% endfor %}
           </ul>
         </div>
 
-        <div id = "projects">
-          <p>Projects</p>
+        <div id = "projects" class="section">
+          <div class="title-box">
+            <div class="circular" style="background: #33c4e8 url(/assets/images/projects-icon.png) no-repeat center;"></div>
+            Major Projects
+          </div>
           <ul>
           {% for project in site.data.details.projects %}
             <li>
+              <span class="project-name">
             {% if project.url %}
-              <p><a href = "{{ project.url }}">{{ project.name }}</a></p>
+              <a href = "{{ project.url }}">{{ project.name }}</a>
             {% else %}
-              <p>{{ project.name }}</p>
+              {{ project.name }}
             {% endif %}
-              <p class = "description">{{ project.description }}</p>
+              </span>
             {% if project.details_url %}
               <span class = "details_url">
-                <a href = "{{ project.details_url }}">details</a>
+                <a href = "{{ project.details_url }}">[More]</a>
               </span>
             {% endif %}
             {% if project.source_url %}
               <span class = "source_url">
-                <a href = "{{ project.source_url }}">source</a>
+                <a href = "{{ project.source_url }}">[Source]</a>
               </span>
             {% endif %}
+              <p class = "description">
+                {{ project.description }}
+              </p>
             </li>
           {% endfor %}
-          </ul>
-        </div>
 
-        <div id = "misc_projects">
-          <p>Miscellaneous Projects</p>
-          <ul>
-          {% for project in site.data.details.misc_projects %}
             <li>
-            {% if project.url %}
-              <span><a href = "{{ project.url }}">{{ project.name }}</a></span>
-            {% else %}
-              <span>{{ project.name }}</span>
-            {% endif %}
-              <span class = "description">{{ project.description }}</span>
-            {% if project.details_url %}
-              <span class = "details_url">
-                <a href = "{{ project.details_url }}">details</a>
-              </span>
-            {% endif %}
-            {% if project.source_url %}
-              <span class = "source_url">
-                <a href = "{{ project.source_url }}">source</a>
-              </span>
-            {% endif %}
+              <p class = "all-projects">
+                To view all my projects in detail click <a href = "/projects">[here]</a>.
+              </p>
             </li>
-          {% endfor %}
           </ul>
+
         </div>
 
-        <div id = "interests">
-          <p>Interests</p>
-          <p>{{ site.data.details.interests }}</p>
-        </div>
-
-        <div id = "acheivements">
-          <p>Acheivements</p>
+        <div id = "acheivements" class="section">
+          <div class="title-box">
+            <div class="circular" style="background: #33c4e8 url(/assets/images/acheivements-icon.png) no-repeat center;"></div>
+            Acheivements
+          </div>
           <ul>
           {% for acheivement in site.data.details.acheivements %}
             <li>{{ acheivement }}</li>
@@ -123,7 +115,7 @@ layout: default
 
         <div id="profile-image">
         </div>
-        
+
         <div id = "links">
           <ul>
             {% for link in site.data.details.links %}
@@ -133,19 +125,23 @@ layout: default
             {% endfor %}
           </ul>
         </div>
-
+<!-- Decide where to keep!!
         <div id = "summary">
           <p>Summary</p>
           <p>{{ site.data.details.summary }}</p>
         </div>
-
-        <div id = "skills">
-          <p>Skills</p>
+        <div id = "interests">
+          <p>Interests</p>
+          <p>{{ site.data.details.interests }}</p>
+        </div>
+//-->
+        <div id = "skills" class="section">
+          <p class="title-box">Skills</p>
           <ul>
           {% for skill in site.data.details.skills %}
             <li>
-              <p>{{ skill.category }}</p>
-              <p>{{ skill.skill_set }}</p>
+              <p class="skill-category">{{ skill.category }}</p>
+              <p class="skill-set">{{ skill.skill_set }}</p>
             </li>
           {% endfor %}
           </ul>

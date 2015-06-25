@@ -4,6 +4,8 @@
 */
 body {
   background-color: black;
+  color: white;
+  font-family: "Verdana";
 }
 
 .container {
@@ -12,17 +14,24 @@ body {
   border-right: 1px solid white;
 }
 
-.circular {
-  display: inline-block;
-  position: relative;
-  top: 7px;
-  margin-right: 10px;
-  width: 25px;
-  height: 25px;
-  border-radius: 25px;
-  -ms-border-radius: 25px;
-  -webkit-border-radius: 25px;
-  -moz-border-radius: 25px;
+.section {
+  border-top: 1px solid #9b9c97;
+  box-shadow: 0 -5px 5px -5px #707070;
+  margin-top: 20px;
+}
+
+.title-box {
+  float: left;
+  padding: 0 10px;
+  margin: -10px 0 0 20px;
+  text-transform: uppercase;
+  background-color: #4f5152;
+  font-size: 1.5em;
+}
+
+.section ul {
+  margin-top: 20px;
+  list-style: none;
 }
 
 #about-row {
@@ -46,7 +55,6 @@ body {
 
 #about-details span {
   display: block;
-  color: white;
   font-family: "Verdana";
   padding-bottom: 5px;
   padding-top: 15px;
@@ -60,8 +68,89 @@ body {
   font-size: 1.5em;
 }
 
+#main-content a {
+  text-decoration: none;
+  color: white;
+}
+
+#main-content a:hover {
+  text-decoration: none;
+  color: #33c4e8
+}
+
 #details {
   background-color: #4f5152;
+}
+
+#details .section {
+  margin: 40px 50px 40px 30px;
+}
+
+#details .circular {
+  display: inline-block;
+  position: relative;
+  top: 8px;
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 40;
+  -ms-border-radius: 40;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+}
+
+#details .title-box {
+  margin: -33px 0px 0px 0px;
+  color: #33c4e8;
+  font-size: 1.8em;
+}
+
+#details .section ul {
+  margin-top: 40px;
+}
+
+#details .section ul li {
+  padding-bottom: 15px;
+}
+
+#education .school {
+  text-transform: uppercase;
+  font-size: 1.2em
+}
+
+#education .duration {
+  float: right;
+}
+
+#education .degree, .field{
+  font-style: italic;
+}
+
+#employment .employer {
+  text-transform: uppercase;
+  font-size: 1.2em;
+}
+
+#employment .duration {
+  float: right;
+}
+
+#employment .position {
+  font-style: italic;
+  font-size: 1.2em;
+}
+
+#projects .project-name {
+  text-transform: uppercase;
+  font-size: 1.2em
+}
+
+#projects .details_url, .source_url {
+  float: right;
+}
+
+#projects .all-projects {
+  text-align: center;
 }
 
 #sidebar {
@@ -102,16 +191,40 @@ body {
   -webkit-border-radius: 2px;
 }
 
+.circular {
+  display: inline-block;
+  position: relative;
+  top: 8px;
+  margin-right: 10px;
+  width: 25px;
+  height: 25px;
+  border-radius: 25px;
+  -ms-border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+}
+
+
 #links ul {
   list-style: none;
 }
 
 #links ul li {
-  padding: 5px 0px;
+  padding: 3px 0px;
 }
 
-#links a {
-  color: white;
-  text-decoration: none;
+#skills .title-box {
+  background-color: #39393b;
+}
+
+#skills .skill-category {
+  text-transform: uppercase;
   font-size: 1.2em;
+}
+
+/* A font by Alex
+Scholing, www.fontsbyalex.com */
+@font-face {
+  font-family: myFont;
+  src: url(/assets/fonts/);
 }
