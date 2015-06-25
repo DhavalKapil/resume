@@ -9,7 +9,7 @@ body {
 }
 
 .container {
-  background-color: #38222e;
+  background-color: #39393b;
   border-left: 1px solid white;
   border-right: 1px solid white;
 }
@@ -38,7 +38,7 @@ body {
   background-color: #33c4e8;
   width: 100%;
   margin-left: 0px;
-  margin-bottom: 5px;
+  margin-bottom: 0px;
 }
 
 #about {
@@ -68,6 +68,12 @@ body {
   font-size: 1.5em;
 }
 
+#main-content {
+  border-top: 5px solid #38222e;
+  margin-top: 0px;
+  margin-left: 0px;
+}
+
 #main-content a {
   text-decoration: none;
   color: white;
@@ -80,6 +86,7 @@ body {
 
 #details {
   background-color: #4f5152;
+  margin-left: 0px;
 }
 
 #details .section {
@@ -154,7 +161,6 @@ body {
 }
 
 #sidebar {
-  background-color: #39393b;
   margin-left: 0px;
   padding-left: 10px;
   padding-right: 10px;
