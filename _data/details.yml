@@ -6,37 +6,37 @@ links:
   - name: email
     text: me@dhavalkapil.com
     link: mailto:me@dhavalapil.com
-    icon: /assets/images/mail-link.png
+    icon: assets/images/mail-link.png
 
   - name: github
     text: DhavalKapil
     link: https://github.com/DhavalKapil
-    icon: /assets/images/github-link.png
+    icon: assets/images/github-link.png
 
   - name: blog
     text: dhavalkapil.com
     link: https://dhavalkapil.com/
-    icon: /assets/images/blog-link.png
+    icon: assets/images/blog-link.png
   
   - name: linkedin
     text: dhavalkapil
     link: https://in.linkedin.com/in/dhavalkapil
-    icon: /assets/images/linkedin-link.png
+    icon: assets/images/linkedin-link.png
 
   - name: google-plus
     text: +DhavalKapildk
     link: https://plus.google.com/+DhavalKapildk
-    icon: /assets/images/google-plus-link.png
+    icon: assets/images/google-plus-link.png
 
   - name: twitter
     text: dhaval_kapil
     link: https://twitter.com/dhaval_kapil
-    icon: /assets/images/twitter-link.png
+    icon: assets/images/twitter-link.png
 
   - name: facebook
     text: dhaval.kapil
     link: https://www.facebook.com/dhaval.kapil
-    icon: /assets/images/facebook-link.png
+    icon: assets/images/facebook-link.png
 
 summary: "Developer, Hacker, Programmer, Geek"
 
