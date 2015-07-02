@@ -70,7 +70,7 @@ employment:
 skills:
   
   - category: "Web"
-    skill_set: "PHP, Javascript, Node.JS, Python, Ruby, JSP, HTML, CSS"
+    skill_set: "PHP, Javascript, JQuery, Node.JS, Python, Ruby, JSP, HTML, CSS"
 
   - category: "Developing"
     skill_set: "Java, Lua, C, C++, MySQL, elasticsearch, mongodb, C#"
@@ -86,10 +86,8 @@ projects:
       Backdoor is a platform for hackers to show their talent in a competitive
       environment. Earlier it was launched only within the IIT Roorkee campus,
       but now it has been made available for anyone over the internet.
-      It is a Capture the Flag styled event. A flag (basically a string) is
-      associated with every challenge. Once you have solved a particular
-      challenge you would get the hidden flag which you need to submit
-      back to us for getting points.
+      It is a Capture the Flag styled wargame with occasional competitions.
+      I developed the backend of the website and contribute in making challenges.
       <b>Awarded the best dynamic website in Srishti IITR 2015(Annual technical
       exhibition of IIT Roorkee)</b>
     details_url: https://blog.sdslabs.co/2014/10/launching-backdoor/
@@ -113,12 +111,10 @@ projects:
       display
     source_url: https://github.com/DhavalKapil/network-monitor
 
-misc_projects:
-
   - name: "JEE listing"
-    url: https://jee.sdslabs.co/
+    url: https://jee.sdslabs.co/2014
     description: >
-      Was part of a team that released the first unofficial JEE listing in 2014
+      Was part of the team that released the first unofficial JEE listing in 2014
 
   - name: "viewer"
     description: >
@@ -126,7 +122,7 @@ misc_projects:
       side to the server side immediately.
     source_url: https://github.com/DhavalKapil/viewer
 
-  - name: "MusicComposer"
+  - name: "Music Composer"
     description: >
       A music generator that makes pleasing music based on western music theory.
     source_url: https://github.com/DhavalKapil/MusicComposer
@@ -136,7 +132,7 @@ interests: >
   development
 
 achievements:
-  - "Runners up in Microsoft Code.Fun.Do hackathon"
+  - "Runners up in Microsoft Code.Fun.Do hackathon."
   - "Selected for onsite attack defense round in Microsoft Build The Shield"
   - "All India Rank 114 in JEE MAINS 2013 (around 12,60,000 students participated)"
   - "All India Rank 379 in JEE ADVANCE 2013 (top 1,28,000 students of JEE MAINS 2013 appeared)"
