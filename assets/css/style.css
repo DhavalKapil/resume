@@ -5,7 +5,8 @@
 body {
   background-color: black;
   color: white;
-  font-family: "Sans Serif";
+  /*font-family: "Sans Serif";*/
+  font-family: "GothamBook";
 }
 
 .container {
@@ -27,6 +28,7 @@ body {
   text-transform: uppercase;
   background-color: #4f5152;
   font-size: 1.5em;
+  font-family: "ChoplinMedium";
 }
 
 .section ul {
@@ -55,7 +57,8 @@ body {
 
 #about-details span {
   display: block;
-  font-family: "Verdana";
+  /*font-family: "Verdana";*/
+  font-family: "GothamBook";  
   padding-bottom: 5px;
   padding-top: 15px;
 }
@@ -228,9 +231,7 @@ body {
   font-size: 1.2em;
 }
 
-/* A font by Alex
-Scholing, www.fontsbyalex.com */
 @font-face {
-  font-family: myFont;
-  src: url(/assets/fonts/);
+  font-family: "GothamBook";
+  src: url(/assets/fonts/GothamBook.ttf);
 }
