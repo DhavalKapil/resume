@@ -182,7 +182,7 @@ body {
   -ms-border-radius: 250px;
   -webkit-border-radius: 250px;
   -moz-border-radius: 250px;
-  background: url(/assets/images/profile.jpg) no-repeat center;
+  background: url(../images/profile.jpg) no-repeat center;
 }
 
 #links {
@@ -243,5 +243,5 @@ body {
 
 @font-face {
   font-family: "GothamBook";
-  src: url(/assets/fonts/GothamBook.ttf);
+  src: url(../fonts/GothamBook.ttf);
 }
