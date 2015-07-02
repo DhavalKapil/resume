@@ -125,16 +125,12 @@ layout: default
             {% endfor %}
           </ul>
         </div>
-<!-- Decide where to keep!!
-        <div id = "summary">
-          <p>Summary</p>
-          <p>{{ site.data.details.summary }}</p>
+
+        <div id = "summary" class="section">
+          <p class="title-box">Summary</p>
+          <p class="side-content">{{ site.data.details.summary }}</p>
         </div>
-        <div id = "interests">
-          <p>Interests</p>
-          <p>{{ site.data.details.interests }}</p>
-        </div>
-//-->
+
         <div id = "skills" class="section">
           <p class="title-box">Skills</p>
           <ul>
@@ -146,5 +142,11 @@ layout: default
           {% endfor %}
           </ul>
         </div>
+
+        <div id = "interests" class="section">
+          <p class="title-box">Interests</p>
+          <p class="side-content">{{ site.data.details.interests }}</p>
+        </div>
+
       </div>
     </div>
