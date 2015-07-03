@@ -45,13 +45,33 @@ education:
   - school: "Indian Institute of Technology, IIT Roorkee"
     degree: "B. Tech"
     field: "Computer Science and Engineering"
-    from: "2013"
+    from: "July 2013"
     to: "present"
 
 employment:
 
-  - employer: "SDSLabs, IIT Roorkee"
+  - employer: "Google Summer of Code"
     position: "Developer"
+    description: >
+      Elasticsearch is a very good and scalable search engine. There already
+      are a lot of open source clients in PHP, JS, Python, Ruby, etc but none
+      for Lua. My project aims to create an elastic-search client for the Lua
+      Programming language. Track development
+      <a href = "https://github.com/DhavalKapil/elasticsearch-lua">[here]</a>.
+    from: "May 2015"
+    to: "present"
+
+  - employer: "Reliance Jio Infocomm Limited"
+    position: "Penetration Tester, Developer"
+    description: >
+      Worked as part of their cloud team. I helped in pentesting their cloud.
+      Also I developed a network monitoring web application that checks the
+      health of different vRouter/Agent in Open Contrail. Used django/python.
+    from: "May 2015"
+    to: "June 2015"
+
+  - employer: "SDSLabs, IIT Roorkee"
+    position: "Joint Secretary, Developer"
     description: >
       An awesome group of students constantly striving to innovate and foster
       technical activities at IIT Roorkee.
@@ -70,7 +90,9 @@ employment:
 skills:
   
   - category: "Web"
-    skill_set: "PHP, Javascript, JQuery, Node.JS, Python, Ruby, JSP, HTML, CSS"
+    skill_set: >
+      PHP, Javascript, JQuery, Node.JS, Python, Django, Ruby, JSP, HTML,
+      CSS
 
   - category: "Developing"
     skill_set: "Java, Lua, C, C++, MySQL, elasticsearch, mongodb, C#"

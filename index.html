@@ -51,7 +51,7 @@ layout: default
                 {{ emp.from }} - {{ emp.to }}
               </span><br />
               <span class = "position">{{ emp.position }}</span><br />
-              <span class = "description"> - {{ emp.description }}</span>
+              <div class = "description"> - {{ emp.description }}</div>
             </li>
           {% endfor %}
           </ul>
@@ -87,12 +87,6 @@ layout: default
               </p>
             </li>
           {% endfor %}
-
-            <li>
-              <p class = "all-projects">
-                To view all my projects in detail click <a href = "/projects">[here]</a>.
-              </p>
-            </li>
           </ul>
 
         </div>

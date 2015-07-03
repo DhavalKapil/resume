@@ -1,7 +1,3 @@
-/*
-  Width: 960px
-  column start: 634px;
-*/
 body {
   background-color: black;
   color: white;
@@ -151,6 +147,10 @@ body {
   font-size: 1.2em;
 }
 
+#employment .description {
+  margin: 5px 0px 10px 0px;
+}
+
 #projects .project-name {
   text-transform: uppercase;
   font-size: 1.2em
@@ -158,10 +158,6 @@ body {
 
 #projects .details_url, .source_url {
   float: right;
-}
-
-#projects .all-projects {
-  text-align: center;
 }
 
 #sidebar {
