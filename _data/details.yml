@@ -5,7 +5,7 @@ occupation: Developer
 links:
   - name: email
     text: me@dhavalkapil.com
-    link: mailto:me@dhavalapil.com
+    link: mailto:me@dhavalkapil.com
     icon: assets/images/mail-link.png
 
   - name: github
@@ -38,7 +38,7 @@ links:
     link: https://www.facebook.com/dhaval.kapil
     icon: assets/images/facebook-link.png
 
-summary: "Developer, Hacker, Programmer, Geek"
+summary: "Developer, Hacker, Programmer, Geek, Musician"
 
 education:
 
@@ -53,10 +53,9 @@ employment:
   - employer: "Google Summer of Code"
     position: "Developer"
     description: >
-      Elasticsearch is a very good and scalable search engine. There already
-      are a lot of open source clients in PHP, JS, Python, Ruby, etc but none
-      for Lua. My project aims to create an elastic-search client for the Lua
-      Programming language. Track development
+      Developing the first ever elasticsearch client in Lua from scratch. It's
+      a wrapper over the HTTP protocol involving load balancing of nodes within
+      the cluster. Track development
       <a href = "https://github.com/DhavalKapil/elasticsearch-lua">[here]</a>.
     from: "May 2015"
     to: "present"
@@ -64,17 +63,18 @@ employment:
   - employer: "Reliance Jio Infocomm Limited"
     position: "Penetration Tester, Developer"
     description: >
-      Worked as part of their cloud team. I helped in pentesting their cloud.
-      Also I developed a network monitoring web application that checks the
-      health of different vRouter/Agent in Open Contrail. Used django/python.
+      As part of their cloud team, pentested their cloud and developed a
+      network monitoring web application that reports the health of different
+      vRouter/Agent in Open Contrail from scratch. Used django/python for the
+      backend and cronjobs. Devised algorithms for minimizing network load.
     from: "May 2015"
     to: "June 2015"
 
   - employer: "SDSLabs, IIT Roorkee"
     position: "Joint Secretary, Developer"
     description: >
-      An awesome group of students constantly striving to innovate and foster
-      technical activities at IIT Roorkee.
+      Managing the activities of Software Development Section, IIT Roorkee
+      and developing applications for it.
     from: "January 2014"
     to: "present"
 
@@ -95,7 +95,7 @@ skills:
       CSS
 
   - category: "Developing"
-    skill_set: "Java, Lua, C, C++, MySQL, elasticsearch, mongodb, C#"
+    skill_set: "Java, C, C++, Lua, MySQL, elasticsearch, mongodb, C#"
 
   - category: "Misc"
     skill_set: "linux, bash, git, vim"
@@ -105,13 +105,12 @@ projects:
   - name: "Backdoor"
     url: https://backdoor.sdslabs.co/
     description: >
-      Backdoor is a platform for hackers to show their talent in a competitive
-      environment. Earlier it was launched only within the IIT Roorkee campus,
-      but now it has been made available for anyone over the internet.
-      It is a Capture the Flag styled wargame with occasional competitions.
-      I developed the backend of the website and contribute in making challenges.
-      <b>Awarded the best dynamic website in Srishti IITR 2015(Annual technical
-      exhibition of IIT Roorkee)</b>
+      Developed a platform for hackers to show their talent in a competitive
+      environment. Backdoor is a Capture the Flag styled wargame with
+      occasional competitions. Written in PHP(Toro microframework). Uses MySQL
+      and Memcache. Challenges served using a jailed environment. <b>Awarded
+      the best dynamic website in Srishti IITR 2015(Annual technical exhibition
+      of IIT Roorkee)</b>
     details_url: https://blog.sdslabs.co/2014/10/launching-backdoor/
 
   - name: "dns-validator"
@@ -154,7 +153,10 @@ interests: >
   development
 
 achievements:
-  - "Runners up in Microsoft Code.Fun.Do hackathon."
+  - "Runners up in Microsoft Code.Fun.Do hackathon, Top 10 in design milestone and coding milestone"
   - "Selected for onsite attack defense round in Microsoft Build The Shield"
   - "All India Rank 114 in JEE MAINS 2013 (around 12,60,000 students participated)"
   - "All India Rank 379 in JEE ADVANCE 2013 (top 1,28,000 students of JEE MAINS 2013 appeared)"
+  - >
+    Qualified and appeared for INMO 2013 (Was the topper in the 2nd round of RMO) 
+    <a href='http://www.pioneermathematics.com/content/latest_updates/Result-of-RMO-2012-_Second-Round.pdf'>[result]</a>

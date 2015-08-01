@@ -156,8 +156,9 @@ body {
   font-size: 1.2em
 }
 
-#projects .details_url, .source_url {
+#projects .project_url, .details_url, .source_url {
   float: right;
+  padding-right: 4px;
 }
 
 #sidebar {

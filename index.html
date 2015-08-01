@@ -65,13 +65,7 @@ layout: default
           <ul>
           {% for project in site.data.details.projects %}
             <li>
-              <span class="project-name">
-            {% if project.url %}
-              <a href = "{{ project.url }}">{{ project.name }}</a>
-            {% else %}
-              {{ project.name }}
-            {% endif %}
-              </span>
+              <span class="project-name">{{ project.name }}</span>
             {% if project.details_url %}
               <span class = "details_url">
                 <a href = "{{ project.details_url }}">[More]</a>
@@ -80,6 +74,11 @@ layout: default
             {% if project.source_url %}
               <span class = "source_url">
                 <a href = "{{ project.source_url }}">[Source]</a>
+              </span>
+            {% endif %}
+            {% if project.url %}
+              <span class = "project_url">
+                <a href = "{{ project.url }}">[Website]</a>
               </span>
             {% endif %}
               <p class = "description">
