@@ -53,9 +53,11 @@ employment:
   - employer: "Google Summer of Code"
     position: "Developer"
     description: >
-      Developing the first ever elasticsearch client in Lua from scratch. It's
-      a wrapper over the HTTP protocol involving load balancing of nodes within
-      the cluster. Track development
+      Developing the first ever client for the elasticsearch REST API in Lua
+      from scratch. It's a wrapper over the HTTP protocol. Manages network
+      connections with all nodes in the cluster. Uses proper load balancing
+      algorithms. Handles parsing from JSON to lua table and vice versa.
+      Track development
       <a href = "https://github.com/DhavalKapil/elasticsearch-lua">[here]</a>.
     from: "May 2015"
     to: "present"
@@ -105,12 +107,12 @@ projects:
   - name: "Backdoor"
     url: https://backdoor.sdslabs.co/
     description: >
-      Developed a platform for hackers to show their talent in a competitive
-      environment. Backdoor is a Capture the Flag styled wargame with
-      occasional competitions. Written in PHP(Toro microframework). Uses MySQL
-      and Memcache. Challenges served using a jailed environment. <b>Awarded
-      the best dynamic website in Srishti IITR 2015(Annual technical exhibition
-      of IIT Roorkee)</b>
+      Developed a platform for computer security enthusiasts to show their
+      talent in a competitive environment. Backdoor is a Capture the Flag 
+      styled wargame with occasional competitions. Written in PHP(Toro 
+      microframework). Uses MySQL and Memcache. Challenges served using a 
+      jailed environment. <b>Awarded the best dynamic website in Srishti 
+      IITR 2015(Annual technical exhibition of IIT Roorkee)</b>
     details_url: https://blog.sdslabs.co/2014/10/launching-backdoor/
 
   - name: "dns-validator"
