@@ -54,11 +54,10 @@ employment:
     position: "Developer"
     description: >
       Developing the first ever client for the elasticsearch REST API in Lua
-      from scratch. It's a wrapper over the HTTP protocol. Manages network
-      connections with all nodes in the cluster. Uses proper load balancing
-      algorithms. Handles parsing from JSON to lua table and vice versa.
-      Track development
-      <a href = "https://github.com/DhavalKapil/elasticsearch-lua">[here]</a>.
+      from scratch. Gained experience while using HTTP protocol, JSON parsing
+      and distributed, scalable Elasticsearch server. Worked under LabLua(a
+      research lab in Rio de Janeiro  dedicated to research on programming
+      languages, with emphasis on the Lua language)
     from: "May 2015"
     to: "present"
 
@@ -104,6 +103,15 @@ skills:
 
 projects:
 
+  - name: "Elasticsearch-lua"
+    description: >
+      Developing the first ever client for the elasticsearch REST API in
+      Lua from scratch. It's a wrapper over the HTTP protocol. Manages
+      network connections with all nodes in the cluster. Uses proper load
+      balancing algorithms. Handles parsing from JSON to lua table and vice
+      versa.
+    source_url: https://github.com/DhavalKapil/elasticsearch-lua
+    
   - name: "Backdoor"
     url: https://backdoor.sdslabs.co/
     description: >
